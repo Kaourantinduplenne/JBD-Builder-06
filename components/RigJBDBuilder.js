@@ -22,7 +22,8 @@ const Arrow = () => (
     bounds="parent"
     style={{
       backgroundColor: 'blue',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      position: 'absolute'
     }}
   />
 );
@@ -56,7 +57,7 @@ const RigJBDBuilder = () => {
         {arrows.map((arrow) => (
           <Arrow key={arrow.id} />
         ))}
-        {/* Existing diagram + personnel components go here (unchanged) */}
+        {/* Existing diagram + personnel components should remain here */}
       </div>
     </div>
   );
