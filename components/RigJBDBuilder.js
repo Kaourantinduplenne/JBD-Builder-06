@@ -49,11 +49,9 @@ const RigJBDBuilder = () => {
         <button onClick={addArrow}>Add Blue Arrow</button>
       </div>
       <div id="diagram-container" style={{ position: 'relative', width: '100%', height: '600px', border: '1px solid #ccc' }}>
-        {/* Render zones */}
         {zones.map((zone) => (
           <Zone key={zone.id} color={zone.color} />
         ))}
-        {/* Render arrows */}
         {arrows.map((arrow) => (
           <Arrow key={arrow.id} />
         ))}
